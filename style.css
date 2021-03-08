@@ -188,3 +188,39 @@ section {
   width: 80vw;
   height: 100vh;
 }
+
+/* about me */
+.section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__bottomBox {
+  display: flex;
+}
+
+.career {
+  display: flex;
+  align-items: center;
+}
+
+.career__logo {
+  width: 100px;
+}
+
+.career__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.content__about {
+  display: none;
+  background-color: skyblue;
+}
+
+.section.show-section {
+  display: flex;
+}
