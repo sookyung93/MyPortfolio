@@ -224,3 +224,59 @@ section {
 .section.show-section {
   display: flex;
 }
+
+/* Skills */
+.content__skills {
+  display: none;
+  background-color: var(--color-white);
+}
+.skillBox {
+  width: 80%;
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+}
+
+.skillBox__left {
+  flex-basis: 60%;
+  padding: 20px 40px;
+  background-color: var(--color-dark-grey);
+}
+
+.skillBox__right {
+  flex-basis: 40%;
+}
+
+.skillBox__title {
+  color: var(--color-white);
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-medium-purple);
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  width: 100%;
+  padding: 20px;
+}
