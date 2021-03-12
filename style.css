@@ -280,3 +280,54 @@ section {
   width: 100%;
   padding: 20px;
 }
+
+/* projects */
+.content_projects {
+  display: none;
+  background-color: var(--color-white);
+  width: 80%;
+  margin: auto;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: var(--color-light-white);
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project__description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.project__description h3 {
+  color: var(--color-orange);
+}
+
+.project__description:hover {
+  opacity: 80%;
+}
