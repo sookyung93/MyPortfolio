@@ -164,6 +164,14 @@ li {
   color: var(--color-dark-purple);
 }
 
+.sideBar__menu__item.selected {
+  border-color: var(--color-dark-purple);
+}
+
+.sideBar__menu__item.selected .sideBar__menu__item__first {
+  color: var(--color-dark-purple);
+}
+
 .sideBar__contact {
   padding: 20px 40px;
   width: 100%;

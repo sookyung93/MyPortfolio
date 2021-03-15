@@ -8,6 +8,7 @@ navBarMenu.addEventListener('click', (event) => {
   }
 
   showSection(link);
+  selectedButton(link);
 });
 
 function showSection(link) {
@@ -15,4 +16,11 @@ function showSection(link) {
   prevSection.classList.remove('show-section');
   const newSection = document.querySelector(`${link}`);
   newSection.classList.add('show-section');
+}
+
+function selectedButton(link) {
+  const prevSection = document.querySelector('.selected');
+  prevSection.classList.remove('selected');
+  const newSelected = document.querySelector(`[data-link="${link}"]`);
+  newSelected.classList.add('selected');
 }
