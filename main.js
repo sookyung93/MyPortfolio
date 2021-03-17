@@ -19,8 +19,8 @@ function showSection(link) {
 }
 
 function selectedButton(link) {
-  const prevSection = document.querySelector('.selected');
-  prevSection.classList.remove('selected');
+  const prevSection = document.querySelector('.active');
+  prevSection.classList.remove('active');
   const newSelected = document.querySelector(`[data-link="${link}"]`);
-  newSelected.classList.add('selected');
+  newSelected.classList.add('active');
 }
