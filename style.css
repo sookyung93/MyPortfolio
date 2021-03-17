@@ -195,15 +195,21 @@ li {
 section {
   width: 80vw;
   height: 100vh;
-}
-
-/* about me */
-.section {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  position: relative;
+}
+
+/* about me */
+.content__about {
+  position: absolute;
+  background-color: skyblue;
 }
 
 .about__bottomBox {
@@ -224,18 +230,14 @@ section {
   text-align: left;
 }
 
-.content__about {
-  display: none;
-  background-color: skyblue;
-}
-
 .section.show-section {
-  display: flex;
+  opacity: 1;
 }
 
 /* Skills */
 .content__skills {
-  display: none;
+  position: absolute;
+  opacity: 0;
   background-color: var(--color-white);
 }
 .skillBox {
@@ -291,7 +293,8 @@ section {
 
 /* projects */
 .content__projects {
-  display: none;
+  position: absolute;
+  opacity: 0;
   background-color: var(--color-white);
   padding: 0 80px;
   margin: auto;

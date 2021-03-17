@@ -11,6 +11,12 @@ navBarMenu.addEventListener('click', (event) => {
   activeButton(link);
 });
 
+// const categoryBtns = document.querySelector('.category__btn');
+// categoryBtns.addEventListener('click', (event) => {
+//   console.log('hi');
+//   console.log(event);
+// });
+
 function showSection(link) {
   const prevSection = document.querySelector('.show-section');
   prevSection.classList.remove('show-section');
@@ -24,3 +30,10 @@ function activeButton(link) {
   const newSection = document.querySelector(`[data-link="${link}"]`);
   newSection.classList.add('active');
 }
+
+// function selectedCategory(category) {
+//   const prevBtn = document.querySelector('.selected');
+//   prevBtn.classList.remove('selected');
+//   const newBtn = document.querySelector(`[data-filter="${category}"]`);
+//   newBtn.classList.add('selected');
+// }
