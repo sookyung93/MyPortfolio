@@ -8,7 +8,7 @@ navBarMenu.addEventListener('click', (event) => {
   }
 
   showSection(link);
-  selectedButton(link);
+  activeButton(link);
 });
 
 function showSection(link) {
@@ -18,9 +18,9 @@ function showSection(link) {
   newSection.classList.add('show-section');
 }
 
-function selectedButton(link) {
+function activeButton(link) {
   const prevSection = document.querySelector('.active');
   prevSection.classList.remove('active');
-  const newSelected = document.querySelector(`[data-link="${link}"]`);
-  newSelected.classList.add('active');
+  const newSection = document.querySelector(`[data-link="${link}"]`);
+  newSection.classList.add('active');
 }
